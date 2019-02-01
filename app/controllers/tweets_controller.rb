@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :hoge, except: :index
+  before_action :move_to_index, except: :index
 
 def index
   @tweets = Tweet.order("created_at DESC")
